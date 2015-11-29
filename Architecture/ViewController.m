@@ -7,16 +7,19 @@
 //
 
 #import "ViewController.h"
-
+#import "VideoNetManager.h"
 @interface ViewController ()
-
+@property (nonatomic,strong) VideoModel * videoModel;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [VideoNetManager getVideoCompletionHandle:^(VideoModel *model, NSError *error) {
+        self.videoModel=model;
+        NSLog(@"断点");
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

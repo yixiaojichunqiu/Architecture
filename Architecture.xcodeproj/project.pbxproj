@@ -15,6 +15,10 @@
 		85FDFFCB1C0723B0003F4714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FDFFC91C0723B0003F4714 /* LaunchScreen.storyboard */; };
 		85FDFFD61C0723B0003F4714 /* ArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFD51C0723B0003F4714 /* ArchitectureTests.m */; };
 		85FDFFE11C0723B1003F4714 /* ArchitectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFE01C0723B1003F4714 /* ArchitectureUITests.m */; };
+		85FDFFF31C0726E1003F4714 /* NSObject+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFF21C0726E1003F4714 /* NSObject+Network.m */; settings = {ASSET_TAGS = (); }; };
+		85FDFFF61C072B79003F4714 /* VideoNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFF51C072B79003F4714 /* VideoNetManager.m */; settings = {ASSET_TAGS = (); }; };
+		85FDFFF91C072FCA003F4714 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFF81C072FCA003F4714 /* VideoModel.m */; settings = {ASSET_TAGS = (); }; };
+		85FDFFFC1C0730E7003F4714 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FDFFFB1C0730E7003F4714 /* NSObject+Parse.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		85FDFFDC1C0723B1003F4714 /* ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FDFFE01C0723B1003F4714 /* ArchitectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchitectureUITests.m; sourceTree = "<group>"; };
 		85FDFFE21C0723B1003F4714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FDFFF11C0726E1003F4714 /* NSObject+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Network.h"; sourceTree = "<group>"; };
+		85FDFFF21C0726E1003F4714 /* NSObject+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Network.m"; sourceTree = "<group>"; };
+		85FDFFF41C072B79003F4714 /* VideoNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoNetManager.h; sourceTree = "<group>"; };
+		85FDFFF51C072B79003F4714 /* VideoNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoNetManager.m; sourceTree = "<group>"; };
+		85FDFFF71C072FCA003F4714 /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		85FDFFF81C072FCA003F4714 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		85FDFFFA1C0730E7003F4714 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		85FDFFFB1C0730E7003F4714 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,9 @@
 				85FDFFBF1C0723B0003F4714 /* AppDelegate.m */,
 				85FDFFC11C0723B0003F4714 /* ViewController.h */,
 				85FDFFC21C0723B0003F4714 /* ViewController.m */,
+				85FDFFEE1C0726BB003F4714 /* Category */,
+				85FDFFEF1C0726BB003F4714 /* Model */,
+				85FDFFF01C0726BB003F4714 /* Network */,
 				85FDFFC41C0723B0003F4714 /* Main.storyboard */,
 				85FDFFC71C0723B0003F4714 /* Assets.xcassets */,
 				85FDFFC91C0723B0003F4714 /* LaunchScreen.storyboard */,
@@ -138,6 +153,35 @@
 				85FDFFE21C0723B1003F4714 /* Info.plist */,
 			);
 			path = ArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		85FDFFEE1C0726BB003F4714 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				85FDFFF11C0726E1003F4714 /* NSObject+Network.h */,
+				85FDFFF21C0726E1003F4714 /* NSObject+Network.m */,
+				85FDFFFA1C0730E7003F4714 /* NSObject+Parse.h */,
+				85FDFFFB1C0730E7003F4714 /* NSObject+Parse.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		85FDFFEF1C0726BB003F4714 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85FDFFF71C072FCA003F4714 /* VideoModel.h */,
+				85FDFFF81C072FCA003F4714 /* VideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85FDFFF01C0726BB003F4714 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				85FDFFF41C072B79003F4714 /* VideoNetManager.h */,
+				85FDFFF51C072B79003F4714 /* VideoNetManager.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FDFFFC1C0730E7003F4714 /* NSObject+Parse.m in Sources */,
 				85FDFFC31C0723B0003F4714 /* ViewController.m in Sources */,
 				85FDFFC01C0723B0003F4714 /* AppDelegate.m in Sources */,
+				85FDFFF61C072B79003F4714 /* VideoNetManager.m in Sources */,
+				85FDFFF31C0726E1003F4714 /* NSObject+Network.m in Sources */,
 				85FDFFBD1C0723B0003F4714 /* main.m in Sources */,
+				85FDFFF91C072FCA003F4714 /* VideoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
